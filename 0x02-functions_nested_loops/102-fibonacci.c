@@ -2,8 +2,6 @@
 /**
  * main - main function
  *
- * f2: variable
- *
  * Return: 0 on success
  */
 int main(void)
@@ -11,6 +9,7 @@ int main(void)
 	int i;
 	int f0 = 0;
 	int f1 = 1;
+	int f2;
 
 	for (i = 1 ; i <= 50 ; i++)
 	{
