@@ -7,7 +7,7 @@
  *
  * @src: copy from
  *
- * Return:
+ * Return: dest
  */
 char *_strcpy(char *dest, char *src)
 {
