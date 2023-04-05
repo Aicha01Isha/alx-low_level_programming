@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * is_prine_number - check the code
+ * main - check the code
  *
  * Return: Always 0.
  */
