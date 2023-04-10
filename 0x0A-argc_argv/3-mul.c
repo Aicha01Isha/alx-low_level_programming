@@ -11,7 +11,7 @@
 
 int _atoi(char *s)
 {
-	int a, b, c, len, f, dig;
+	int a, b, c, len, d, dig;
 
 	a = 0;
 	b = 0;
@@ -34,7 +34,7 @@ int _atoi(char *s)
 			if (b % 2)
 				dig = -dig;
 			c = c * 10 + dig;
-			f = 1;
+			d = 1;
 			if (s[a + 1] < '0' || s[a + 1] > '9')
 				break;
 			d = 0;
@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
 	no2 = _atoi(argv[2]);
 	res = no1 * no2;
 
-	printf("%d\n", result);
+	printf("%d\n", res);
 
 	return (0);
 }
