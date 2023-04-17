@@ -3,6 +3,7 @@
 
 /**
  * struct dog - dog's infos
+ *
  * @name: parameter
  *
  * @age: parameter
@@ -18,7 +19,7 @@ struct dog
 };
 
 /**
- * dog_t - typedef
+ * dog_t - typedef for struct dog
  */
 
 typedef struct dog dog_t;
