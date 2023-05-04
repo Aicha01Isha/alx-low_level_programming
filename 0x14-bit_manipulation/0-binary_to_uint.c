@@ -1,13 +1,23 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
- * _putchar - function that writes the character c
- * @c: parameter
- * Return: 1 on success
+ * binary_to_uint - function that converts a binary number
+ * @b: parameter
+ * Return: number
  */
 
-int _putchar(char c)
+unsigned int binary_to_uint(const char *b)
 {
-	return (write(1, &c, 1));
+	int a;
+	unsigned int d_val = 0;
+
+	if (!b)
+		return (0);
+	for (a = 0; b[a]; a++)
+	{
+		if (b[a] < '0' || b[a] > '1')
+			return (0);
+		d_val = 2 * d_val + (b[a] - '0');
+	}
+	return (d_val);
 }
