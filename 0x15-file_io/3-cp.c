@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	buff |= create_buffer(argv[2]);
+	buff = create_buffer(argv[2]);
 	fr = open(argv[1], O_RDONLY);
 	i = read(fr, buff, 1024);
 	t = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
