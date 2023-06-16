@@ -9,7 +9,7 @@
 size_t print_dlistint(const dlistint_t *h)
 {
 
-	int count = 0;
+	int coun = 0;
 
 	if (h == NULL)
 		return (coun);
@@ -19,7 +19,7 @@ size_t print_dlistint(const dlistint_t *h)
 	{
 		printf("%d\n", h->n);
 		h = h->next;
-		count++;
+		coun++;
 	}
-	return (count);
+	return (coun);
 }
