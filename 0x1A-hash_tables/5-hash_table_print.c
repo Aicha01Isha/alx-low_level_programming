@@ -19,7 +19,7 @@ void hash_table_print(const hash_table_t *ht)
 		if (ht->array[a] != NULL)
 		{
 			test = ht->array[a];
-			while (t)
+			while (test)
 			{
 				printf("%s'%s': '%s'", b == 0 ? "" : ", ",
 					   test->key, test->value), b++;
